@@ -12,7 +12,7 @@ Harmonogram:​
 
 - kategoria: jedzenia, restauracji, cenowa​
 
--wyszukiwanie restauracji po nazwie​
+- wyszukiwanie restauracji po nazwie​
 
 - logowanie do aplikacji​
 
