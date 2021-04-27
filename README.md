@@ -16,7 +16,7 @@ Harmonogram:​
 
 - logowanie do aplikacji​
 
--ocena restauracji​
+- ocena restauracji​
 
 ​
 18.06 - Projekt końcowy i prezentacja​
@@ -25,6 +25,6 @@ Harmonogram:​
 
 - działający koszyk​
 
--historia zamawiania​
+- historia zamawiania​
 
-+ PROTOTYP
+- + PROTOTYP
