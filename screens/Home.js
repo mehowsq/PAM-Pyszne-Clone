@@ -18,12 +18,13 @@ const Home = ({navigation}) => {
         // na chama wklepane dane essa:
 
         const initialCurrentLocation = {
-            streetName: "TfujStaryPijanyESSSSS",
-            // gps: {
-            //     latitude: 1.5496614931250685,
-            //     longitude: 110.36381866919922
-            // }
+            streetName: "ul. Rycerska 3",
+            gps: {
+                latitude: 51.40909141746546,
+                longitude: 19.694644496396823
+            }
         }
+        //51.40909141746546, 19.694644496396823
     
         const categoryData = [
             {
@@ -77,19 +78,17 @@ const Home = ({navigation}) => {
         const restaurantData = [
             {
                 id: 1,
-                name: "Woda i Ogień",
+                name: "Ogień i Woda",
                 rating: 9.5,
-                categories: [1, 4],
+                categories: [1, 5],
                 priceRating: affordable,
                 photo: images.burger_restaurant_1,
                 duration: "30 - 45 min",
                 location: {
-                    latitude: 1.5347282806345879,
-                    longitude: 110.35632207358996,
-                },
-                courier: {
-                    avatar: images.avatar_1,
-                    name: "Amy"
+                    latitude: 51.408136726034215,
+                    longitude: 19.696144454484017,
+                    //52.238524960943046, 20.993878083343844
+                    //51.408136726034215, 19.696144454484017
                 },
                 menu: [
                     {
@@ -97,7 +96,6 @@ const Home = ({navigation}) => {
                         name: "Cheesburger",
                         photo: images.burger_1,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 200,
                         price: 10
                     },
                     {
@@ -105,7 +103,6 @@ const Home = ({navigation}) => {
                         name: "ChickenBurger",
                         photo: images.burger_2,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 250,
                         price: 15
                     },
                     {
@@ -113,7 +110,6 @@ const Home = ({navigation}) => {
                         name: "GigaKoxBurger",
                         photo: images.burger_3,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 194,
                         price: 8
                     }
                 ]
@@ -127,12 +123,9 @@ const Home = ({navigation}) => {
                 photo: images.pizza_restaurant,
                 duration: "15 - 20 min",
                 location: {
-                    latitude: 1.556306570595712,
-                    longitude: 110.35504616746915,
-                },
-                courier: {
-                    avatar: images.avatar_2,
-                    name: "Jackson"
+                    latitude: 51.41056441892815,
+                    longitude: 19.69207171215594,
+                    //51.41056441892815, 19.69207171215594
                 },
                 menu: [
                     {
@@ -140,7 +133,6 @@ const Home = ({navigation}) => {
                         name: "Da Good Pizza",
                         photo: images.pizza_1,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 250,
                         price: 15
                     },
                     {
@@ -148,7 +140,6 @@ const Home = ({navigation}) => {
                         name: "Fajna pizza",
                         photo: images.pizza_2,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 250,
                         price: 20
                     },
                     {
@@ -156,7 +147,6 @@ const Home = ({navigation}) => {
                         name: "Super fajna pizza",
                         photo: images.pizza_3,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 10
                     },
                     {
@@ -164,26 +154,22 @@ const Home = ({navigation}) => {
                         name: "Mega super fajna pizza ",
                         photo: images.pizza_4,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 10
                     }
                 ]
             },
             {
                 id: 3,
-                name: "Ho-Na Sushi",
+                name: "Kyoto Sushi",
                 rating: 4.7,
                 categories: [1, 3],
                 priceRating: expensive,
                 photo: images.sushi_restaurant_1,
                 duration: "20 - 25 min",
                 location: {
-                    latitude: 1.5238753474714375,
-                    longitude: 110.34261833833622,
-                },
-                courier: {
-                    avatar: images.avatar_3,
-                    name: "James"
+                    latitude: 51.407523353746825,
+                    longitude: 19.68976699435496,
+                    //51.407523353746825, 19.68976699435496
                 },
                 menu: [
                     {
@@ -191,7 +177,6 @@ const Home = ({navigation}) => {
                         name: "Giga box sushi",
                         photo: images.sushi,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 20
                     }
                 ]
@@ -200,17 +185,14 @@ const Home = ({navigation}) => {
                 id: 4,
                 name: "Biesiadowo",
                 rating: 4.4,
-                categories: [1, 3],
+                categories: [1, 2],
                 priceRating: expensive,
                 photo: images.polskie_jedzenie,
                 duration: "10 - 15 min",
                 location: {
-                    latitude: 1.5578068150528928,
-                    longitude: 110.35482523764315,
-                },
-                courier: {
-                    avatar: images.avatar_4,
-                    name: "Ahmad"
+                    latitude: 51.40888696387448,
+                    longitude: 19.693059979984277,
+                    //51.40888696387448, 19.693059979984277
                 },
                 menu: [
                     {
@@ -218,7 +200,6 @@ const Home = ({navigation}) => {
                         name: "Schabik",
                         photo: images.kotlet_schabowy,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 50
                     }
                 ]
@@ -227,17 +208,14 @@ const Home = ({navigation}) => {
                 id: 5,
                 name: "Sushi Kushi",
                 rating: 5.0,
-                categories: [1, 2],
+                categories: [1, 3],
                 priceRating: affordable,
                 photo: images.sushi_restaurant_2,
                 duration: "15 - 20 min",
                 location: {
-                    latitude: 1.558050496260768,
-                    longitude: 110.34743759630511,
-                },
-                courier: {
-                    avatar: images.avatar_4,
-                    name: "Muthu"
+                    latitude: 51.40971126884238,
+                    longitude: 19.678502785171304,
+                    //51.40971126884238, 19.678502785171304
                 },
                 menu: [
                     {
@@ -245,7 +223,6 @@ const Home = ({navigation}) => {
                         name: "Sushi 1",
                         photo: images.sushi_kushi_1,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 200,
                         price: 5
                     },
                     {
@@ -253,7 +230,6 @@ const Home = ({navigation}) => {
                         name: "Sushi 2",
                         photo: images.sushi_kushi_2,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 300,
                         price: 8
                     },
                     {
@@ -261,7 +237,6 @@ const Home = ({navigation}) => {
                         name: "Sushi 3",
                         photo: images.sushi_kushi_3,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 300,
                         price: 8
                     },
                     {
@@ -269,7 +244,6 @@ const Home = ({navigation}) => {
                         name: "Sushi 4",
                         photo: images.sushi_kushi_4,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 300,
                         price: 8
                     },
     
@@ -280,17 +254,14 @@ const Home = ({navigation}) => {
                 id: 6,
                 name: "Pizzeria Sjesta",
                 rating: 4.9,
-                categories: [1, 2, 4, 5],
+                categories: [1, 2, 4],
                 priceRating: affordable,
                 photo: images.pizza_restaurant_2,
                 duration: "35 - 40 min",
                 location: {
-                    latitude: 1.5573478487252896,
-                    longitude: 110.35568783282145,
-                },
-                courier: {
-                    avatar: images.avatar_1,
-                    name: "Jessie"
+                    latitude: 51.41113402536956,
+                    longitude: 19.66098997353032,
+                    //51.41113402536956, 19.66098997353032
                 },
                 menu: [
                     {
@@ -298,7 +269,6 @@ const Home = ({navigation}) => {
                         name: "Pizzzzzaaaaa 1",
                         photo: images.pizza_11,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 2
                     },
                     {
@@ -306,7 +276,6 @@ const Home = ({navigation}) => {
                         name: "Pizzzzzaaaaa 2",
                         photo: images.pizza_12,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 100,
                         price: 3
                     },
                     {
@@ -314,7 +283,6 @@ const Home = ({navigation}) => {
                         name: "Pizzzzzaaaaa 3",
                         photo: images.pizza_13,
                         description: "Lorem ipsum Lorem ipsum Lorem ipsum",
-                        calories: 300,
                         price: 20
                     }
                 ]
@@ -364,6 +332,7 @@ const Home = ({navigation}) => {
         setSelectedCategory(category)
 
     }
+    
 
 
     function renderHeader(){
@@ -377,7 +346,7 @@ const Home = ({navigation}) => {
                         backgroundColor: COLORS.primary,
                     }}
                 >
-                    { <Image
+                    {/* { <Image
                         source={icons.list}
                         resizeMode = "contain"
                         style={{
@@ -387,7 +356,7 @@ const Home = ({navigation}) => {
                         }}
                     >
 
-                    </Image> }
+                    </Image> } */}
                     
                 </TouchableOpacity>
                 <View 
@@ -462,6 +431,7 @@ const Home = ({navigation}) => {
                         marginBottom: SIZES.padding
                     }}
                 >
+                    {/* Wyświetlanie zdjęcia restauracji */}
                     <Image
                         source = {item.photo}
                         resizeMode = 'cover'
@@ -471,6 +441,7 @@ const Home = ({navigation}) => {
                             // borderRadius: SIZES.radius
                         }}
                     />
+                    {/* Avatary restauracji */}
                     <View
                         style = {{
                             position: 'absolute',
@@ -487,7 +458,7 @@ const Home = ({navigation}) => {
                             justifyContent: 'center',
                         }}
                     >
-                        
+                        {/* Dodać IMAGE DO AWATARÓW ŻEBY JE POBRAĆ!!!!!! NIE ZAPOMNIJ GŁĄBIE XD */}
                     </View>
                               
                 </View>
@@ -557,7 +528,7 @@ const Home = ({navigation}) => {
                               )  
                             })
                         }
-
+                    {/* ocena restauracji - drogo/tanio */}
                         {
                             [1, 2, 3].map((priceRating) => (
                                 <Text
@@ -577,6 +548,7 @@ const Home = ({navigation}) => {
 
 
         return(
+            // wyświetlanie restauracji
             <FlatList
                 data = {restaurants}
                 keyExtractor = { item => `${item.id}`}
@@ -585,6 +557,7 @@ const Home = ({navigation}) => {
                     paddingHorizontal: SIZES.padding,
                     paddingBottom: 30}}
             />
+
         )
 
     }

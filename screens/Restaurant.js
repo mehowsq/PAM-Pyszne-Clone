@@ -216,15 +216,6 @@ const Restaurant = ({ route, navigation }) => {
                                 <Text style={{ marginVertical: 10, textAlign: 'center', ...FONTS.h2 }}>{item.name} - {item.price.toFixed(2)}</Text>
                                 <Text style={{ ...FONTS.body3 }}>{item.description}</Text>
                             </View>
-
-                            {/* Calories */}
-                            <View
-                                style={{
-                                    flexDirection: 'row',
-                                    marginTop: 10
-                                }}
-                            >
-                            </View>
                         </View>
                     ))
                 }
@@ -308,8 +299,8 @@ const Restaurant = ({ route, navigation }) => {
                             borderBottomWidth: 1
                         }}
                     >
-                        <Text style={{ ...FONTS.h3 }}>{getBasketItemCount()} items in Cart</Text>
-                        <Text style={{ ...FONTS.h3 }}>${sumOrder()}</Text>
+                        <Text style={{ ...FONTS.h3 }}>Do zapłaty: </Text>
+                        <Text style={{ ...FONTS.h3 }}>({sumOrder()}) zł</Text>
                     </View>
 
                     <View
@@ -343,7 +334,7 @@ const Restaurant = ({ route, navigation }) => {
                                 currentLocation: currentLocation
                             })}
                         >
-                            <Text style={{ color: COLORS.white, ...FONTS.h2 }}>Order</Text>
+                            <Text style={{ color: COLORS.white, ...FONTS.h2 }}>Zamów</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
